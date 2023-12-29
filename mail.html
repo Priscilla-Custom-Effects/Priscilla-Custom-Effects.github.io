@@ -13,7 +13,7 @@
     <link rel="icon" type="image/x-icon" href="img/logo.png" />
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/mail.css">
 
     <script src="mail.js" defer></script>
 </head>
@@ -43,10 +43,13 @@
                 <label for="telegram">Telegram (Опционально):</label>
                 <input type="text" id="telegram" name="telegram"><br>
 
+                <label for="product">Продукты в заказе:</label>
+                <textarea id="product" name="product"></textarea><br>
+
                 <label for="comment">Дополнительный комментарий:</label>
                 <textarea id="comment" name="comment"></textarea><br>
 
-                <input type="submit" value="Отправить" onclick="submitMail()">
+                <button onclick="submitMail()">Отправить</button>
             </form>
         </div>
     </main>

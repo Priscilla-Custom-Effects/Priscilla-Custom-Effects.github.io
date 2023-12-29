@@ -4,6 +4,7 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
+  font-family: Noto Sans JP, sans-serif;
 }
 
 .product-image img {
@@ -20,6 +21,7 @@
 
 .product-description button {
   background-color: #422777; /* Green */
+  font-family: Noto Sans JP, sans-serif;
   color: white;
   border-radius: 15px;
   border-width: 2px;

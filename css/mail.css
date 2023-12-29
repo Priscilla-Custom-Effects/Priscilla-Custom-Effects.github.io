@@ -1,0 +1,57 @@
+.mail {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  font-size: 15px;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.mail label {
+  font-size: 1.5em;
+}
+
+.mail input,
+textarea {
+  font-family: Noto Sans JP, sans-serif;
+  color: white;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  font-size: 1.3em;
+  resize: none;
+  width: 100%; /* Make the textarea width 100% of its container */
+  max-width: 100%; /* Ensure the textarea doesn't exceed its container's width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.mail button {
+  width: 100%; /* Make the textarea width 100% of its container */
+  max-width: 100%; /* Ensure the textarea doesn't exceed its container's width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-family: Noto Sans JP, sans-serif;
+  background-color: #422777; /* Green */
+  color: white;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.mail button:hover {
+  background-color: #ffffff;
+  border-color: black;
+  color: black;
+}
