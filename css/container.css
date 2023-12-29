@@ -1,0 +1,28 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  border: 1px solid #ddd;
+  overflow: hidden; /* Добавлено для обрезки изображения */
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.item:hover {
+  background-color: #f0f0f0;
+}
+
+.item img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover; /* Заполнение квадрата */
+  aspect-ratio: 1/1; /* Устанавливаем соотношение сторон 1:1 */
+}
+
