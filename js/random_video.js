@@ -1,6 +1,7 @@
 // Array of video file names in the folder
 var videoFiles = [
-  "bg.webm"
+  "bg1.webm",
+  "bg2.webm"
 ];
 
 // Function to get a random video file from the array
