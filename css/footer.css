@@ -1,0 +1,25 @@
+/* Стили для заголовка страницы и логотипа */
+header {
+  padding: 20px;
+  text-align: right;
+}
+
+li {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 20px;
+}
+
+footer ul li a {
+  text-align: right;
+  font-size: 3em;
+  font-family: Noto Sans JP, sans-serif;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: black;
+  background-color: #ffffff;
+}
