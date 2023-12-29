@@ -1,3 +1,4 @@
+/* Стили для сетки предметов */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -10,12 +11,12 @@
   overflow: hidden; /* Добавлено для обрезки изображения */
   text-align: center;
   text-decoration: none;
-  color: inherit;
+  color: black;
   display: block;
 }
 
 .item:hover {
-  background-color: #f0f0f0;
+  background-color: #ddd;
 }
 
 .item img {
@@ -25,4 +26,3 @@
   object-fit: cover; /* Заполнение квадрата */
   aspect-ratio: 1/1; /* Устанавливаем соотношение сторон 1:1 */
 }
-

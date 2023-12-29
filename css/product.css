@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 20px;
   padding: 20px;
@@ -9,12 +9,13 @@
 .product-image img {
   width: 512px; /* Задайте нужную ширину изображения */
   height: 512px; /* Задайте нужную высоту изображения */
+  overflow: hidden; /* Добавлено для обрезки изображения */
   object-fit: cover; /* Обрезать изображение под соотношение сторон 1:1 */
-  margin-right: 20px; /* Отступ от текста */
+  aspect-ratio: 1/1; /* Устанавливаем соотношение сторон 1:1 */
 }
 
 .product-description {
-  width: 40%; /* Задайте необходимую ширину описания продукта */
+  width: 100%; /* Задайте необходимую ширину описания продукта */
 }
 
 .product-description button {
@@ -28,7 +29,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.2em;
 }
 
 .product-description button:hover {
