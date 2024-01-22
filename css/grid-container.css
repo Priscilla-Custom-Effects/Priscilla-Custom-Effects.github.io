@@ -9,7 +9,8 @@
 
 .item {
   border: 1px solid #ddd;
-  overflow: hidden; /* Добавлено для обрезки изображения */
+  overflow: hidden;
+  /* Добавлено для обрезки изображения */
   text-align: center;
   text-decoration: none;
   color: black;
@@ -24,6 +25,8 @@
   max-width: 100%;
   height: auto;
   width: 100%;
-  object-fit: cover; /* Заполнение квадрата */
-  aspect-ratio: 1/1; /* Устанавливаем соотношение сторон 1:1 */
+  object-fit: cover;
+  /* Заполнение квадрата */
+  aspect-ratio: 1/1;
+  /* Устанавливаем соотношение сторон 1:1 */
 }

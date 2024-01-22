@@ -8,19 +8,26 @@
 }
 
 .product-image img {
-  width: 512px; /* Задайте нужную ширину изображения */
-  height: 512px; /* Задайте нужную высоту изображения */
-  overflow: hidden; /* Добавлено для обрезки изображения */
-  object-fit: cover; /* Обрезать изображение под соотношение сторон 1:1 */
-  aspect-ratio: 1/1; /* Устанавливаем соотношение сторон 1:1 */
+  width: 512px;
+  /* Задайте нужную ширину изображения */
+  height: 512px;
+  /* Задайте нужную высоту изображения */
+  overflow: hidden;
+  /* Добавлено для обрезки изображения */
+  object-fit: cover;
+  /* Обрезать изображение под соотношение сторон 1:1 */
+  aspect-ratio: 1/1;
+  /* Устанавливаем соотношение сторон 1:1 */
 }
 
 .product-description {
-  width: 100%; /* Задайте необходимую ширину описания продукта */
+  width: 100%;
+  /* Задайте необходимую ширину описания продукта */
 }
 
 .product-description button {
-  background-color: #422777; /* Green */
+  background-color: #422777;
+  /* Green */
   font-family: Noto Sans JP, sans-serif;
   color: white;
   border-radius: 15px;

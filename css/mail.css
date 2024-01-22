@@ -27,17 +27,23 @@ textarea {
   color: black;
   font-size: 1.3em;
   resize: none;
-  width: 100%; /* Make the textarea width 100% of its container */
-  max-width: 100%; /* Ensure the textarea doesn't exceed its container's width */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  width: 100%;
+  /* Сделайте ширину текста на 100% своего контейнера */
+  max-width: 100%;
+  /* Убедитесь, что Textarea не превышает ширину своего контейнера */
+  box-sizing: border-box;
+  /* Включите накладку и границу в общую ширину и высоту элемента */
 }
 
 .mail button {
-  width: 100%; /* Make the textarea width 100% of its container */
-  max-width: 100%; /* Ensure the textarea doesn't exceed its container's width */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  width: 100%;
+  /* Сделайте ширину текста на 100% своего контейнера */
+  max-width: 100%;
+  /* Убедитесь, что Textarea не превышает ширину своего контейнера */
+  box-sizing: border-box;
+  /* Включите накладку и границу в общую ширину и высоту элемента */
   font-family: Noto Sans JP, sans-serif;
-  background-color: #422777; /* Green */
+  background-color: #422777;
   color: white;
   border-radius: 15px;
   border-width: 2px;
