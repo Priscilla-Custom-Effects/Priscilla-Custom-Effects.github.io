@@ -9,9 +9,10 @@ function submitMail() {
 
   var randomNumber = Math.floor(10000 + Math.random() * 90000);
 
-  var subject = "🌊Заявка " + randomNumber;
+  var subject = "🌊Заявка #" + randomNumber;
 
-  var body = "ФИО: " +
+  var body =
+    "ФИО: " +
     fio +
     "\nТелефон: " +
     phone +
@@ -31,6 +32,11 @@ function submitMail() {
     return;
   }
 
-  window.location.href =
-    "mailto:priscilla.effects@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  var mailtoLink =
+    "mailto:priscilla.effects@gmail.com?subject=" +
+    encodeURIComponent(subject) +
+    "&body=" +
+    encodeURIComponent(body);
+
+  window.open(mailtoLink, '_blank');
 }
