@@ -11,17 +11,25 @@ function submitMail() {
 
   var subject = "Заявка " + randomNumber;
 
-  var body =
-    "ФИО: \r\n" +
+  var body = "ФИО: " +
     fio +
-    "Телефон: \r\n" +
+    "\nТелефон: " +
     phone +
-    "Telegram: \r\n" +
-    telegram +
-    "Продукты в заказе: \r\n" +
-    product +
-    "Комментарий: \r\n" +
-    comment;
+    "\nКомментарий: \n" +
+    comment;;
+
+  if (telegram.trim() !== "") {
+    body += "\nTelegram: " + telegram;
+  }
+
+  if (product.trim() !== "") {
+    body += "\nПродукты в заказе: " + product;
+  }
+
+  if (comment.trim() === "") {
+    alert("Пожалуйста, заполните все обязательные поля перед отправкой заявки.");
+    return;
+  }
 
   window.location.href =
     "mailto:priscilla.effects@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
