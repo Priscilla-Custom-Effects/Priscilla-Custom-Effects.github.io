@@ -15,16 +15,16 @@ function submitMail() {
     "ФИО: " +
     fio +
     "\nТелефон: " +
-    phone +
+    phone + "\n" +
     "\nКомментарий: \n" +
-    comment;;
+    comment + "\n";
+
+  if (product.trim() !== "") {
+    body += "\nПродукты в заказе: \n" + product + "\n";
+  }
 
   if (telegram.trim() !== "") {
     body += "\nTelegram: " + telegram;
-  }
-
-  if (product.trim() !== "") {
-    body += "\nПродукты в заказе: " + product;
   }
 
   if (comment.trim() === "") {
