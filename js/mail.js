@@ -9,18 +9,18 @@ function submitMail() {
 
   var randomNumber = Math.floor(10000 + Math.random() * 90000);
 
-  var subject = "Заявка" + randomNumber;
+  var subject = "Заявка " + randomNumber;
 
   var body =
-    "ФИО: " +
+    "ФИО: \r\n" +
     fio +
-    "%0AТелефон: " +
+    "Телефон: \r\n" +
     phone +
-    "%0ATelegram: " +
+    "Telegram: \r\n" +
     telegram +
-    "%0AПродукты в заказе: " +
+    "Продукты в заказе: \r\n" +
     product +
-    "%0AКомментарий: " +
+    "Комментарий: \r\n" +
     comment;
 
   window.location.href =
