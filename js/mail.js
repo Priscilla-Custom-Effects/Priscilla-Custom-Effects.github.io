@@ -7,6 +7,10 @@ function submitMail() {
   var product = form.elements["product"].value;
   var comment = form.elements["comment"].value;
 
+  var randomNumber = Math.floor(10000 + Math.random() * 90000);
+
+  var subject = "Заявка" + randomNumber;
+
   var body =
     "ФИО: " +
     fio +
@@ -16,9 +20,9 @@ function submitMail() {
     telegram +
     "%0AПродукты в заказе: " +
     product +
-    "%0AДополнительный комментарий: " +
+    "%0AКомментарий: " +
     comment;
 
   window.location.href =
-    "mailto:priscilla.effects@gmail.com?subject=Заявка&body=" + body;
+    "mailto:priscilla.effects@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
 }
